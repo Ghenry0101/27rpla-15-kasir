@@ -16,7 +16,7 @@ if (!class_exists('Database')) {
         $this->koneksi->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
 
         return $this->koneksi;
-        }
+        }  
     }
 }
 ?>
