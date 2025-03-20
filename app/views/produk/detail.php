@@ -30,7 +30,10 @@
             </tr>
         </table>
     </div>
-    <a href="index.php?c=" class="btn btn-secondary mt-3">Kembali</a>
+    <?php if (isset($_SESSION['is_admin']) && $_SESSION['is_admin'] === true): ?>
+        <a href="index.php?c=produk&page=list" class="btn btn-primary mt-3">Kembali</a>
+    <?php endif; ?>
+    <a href="index.php?c=penjualan&page=list" class="btn btn-secondary mt-3">Kembali</a>
 </div>
 
 </body>

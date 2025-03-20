@@ -48,6 +48,24 @@ class LoginController {
         }
     }
 
+    public function getRegister() {
+        include __DIR__ . "/../views/login/register.php";
+    }
+
+    public function prosesRegister() {
+        $pelangganid = $_POST['txt_pelangganid'];
+        $namapelanggan = $_POST['txt_namapelanggan'];
+        $alamat = $_POST['txt_alamat'];
+
+        // Validasi input
+        if (empty($pelangganid) || empty($namapelanggan) || empty($alamat)) {
+            $_SESSION['error'] = "Semua field harus diisi!";
+            header("Location: index.php?c=login&page=register");
+            exit;
+        }
+        exit;
+    }
+
     public function logout() {
         session_start();
         session_destroy();
