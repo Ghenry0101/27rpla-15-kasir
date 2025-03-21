@@ -23,7 +23,7 @@
                             
                             <div class="col-md-8">
                                             <!-- hati hati disinilah terjadi kesalahan -->
-                                <form action="index.php?page=post_edit" method="POST" enctype="multipart/form-data">
+                                <form action="index.php?c=pelanggan&page=post_edit" method="POST" enctype="multipart/form-data">
                                     <input type="hidden" name="txt_id" value="<?= $data['pelangganid']; ?>">
                                     
                                     <div class="mb-3">

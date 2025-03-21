@@ -103,6 +103,8 @@ if ($action === 'list') {
     $controller->getEdit($_GET['id']);
 } elseif ($action === 'post_edit' && isset($_POST['sbt_update'])) {
     $controller->postEdit();
+}elseif ($action === 'post_edit_produk' && isset($_POST['sbt_update'])) {
+    $controller->postEdit();
 } else {
     $controller->getList();
 }

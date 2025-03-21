@@ -17,7 +17,7 @@
                     <div class="card-body">
                         <div class="row mb-4">
                             <div class="col-md-8">
-                                <form action="index.php?page=post_edit_produk" method="POST" enctype="multipart/form-data">
+                                <form action="index.php?c=produk&page=post_edit_produk" method="POST" enctype="multipart/form-data">
                                     <input type="hidden" name="txt_id" value="<?= $data['produkid']; ?>">
                                     
                                     <div class="mb-3">
